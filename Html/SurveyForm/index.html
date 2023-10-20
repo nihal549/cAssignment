@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Survey Form</h2>
+        <form id="surveyForm">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" required>
+    
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" required>
+    
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required>
+    
+            <label for="country">Country</label>
+            <select id="country" required>
+                <option value="USA">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">United Kingdom</option>
+                <!-- Add more countries here -->
+            </select>
+    
+            <label>Gender</label>
+            <input type="checkbox" id="male"> <label for="male">Male</label>
+            <input type="checkbox" id="female"> <label for ="female">Female</label>
+    
+            <label for="profession">Profession</label>
+            <input type="text" id="profession" required>
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+    
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" required>
+    
+            <button type="button" id="resetBtn">Reset</button>
+            <button type="button" id="submitBtn">Submit</button>
+        </form>
+    </div>
+    
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Survey Form Data</h2>
+            <div id="popup-data"></div>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
